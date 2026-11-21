@@ -1,0 +1,6 @@
+{
+  "name": "Karang Taruna Jaticempaka Digital Ecosystem",
+  "description": "Platform ekosistem digital multi-organisasi untuk Karang Taruna Kelurahan Jaticempaka beserta Unit dan Sub Unit dalam lingkup organisasinya.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

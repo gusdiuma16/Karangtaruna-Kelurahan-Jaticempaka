@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  color-scheme: light;
+  --kt-bg: #ffffff;
+  --kt-surface: #f8fafc;
+  --kt-border: #e2e8f0;
+  --kt-text: #0f172a;
+  --kt-muted: #475569;
+  --kt-accent-blue: #1d4ed8;
+  --kt-accent-orange: #ea580c;
+  --kt-accent-red: #dc2626;
+}
+
+.dark {
+  color-scheme: dark;
+  --kt-bg: #0b1220;
+  --kt-surface: #111c30;
+  --kt-border: #1e2d4a;
+  --kt-text: #f1f5f9;
+  --kt-muted: #94a3b8;
+  --kt-accent-blue: #3b82f6;
+  --kt-accent-orange: #fb923c;
+  --kt-accent-red: #f87171;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+}
